@@ -18,11 +18,15 @@ public class PigLatinGenerator {
                     firstIndex = i;
                     break;
                 }
+                if (firstIndex == i){
+                    break;
+                }
 
             }
             String removedLetters = "";
             removedLetters = str.substring(0, firstIndex);
             newString += str.substring(firstIndex);
+            String newString3 = newString.substring(1);
             return newString + removedLetters + "ay";
         }
 
