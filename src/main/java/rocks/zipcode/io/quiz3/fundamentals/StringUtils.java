@@ -22,7 +22,9 @@ public class StringUtils {
     }
 
     public static Boolean isCharacterAtIndex(String baseString, Character characterToCheckFor, Integer indexOfString) {
-        return null;
+        String[] newArray = baseString.split("");
+        char c = baseString.charAt(indexOfString);
+        return c == characterToCheckFor;
     }
 
     public static String[] getAllSubStrings(String string) {
