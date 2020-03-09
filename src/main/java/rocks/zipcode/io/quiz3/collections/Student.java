@@ -6,15 +6,18 @@ import java.util.List;
  * @author leon on 10/12/2018.
  */
 public class Student {
+    private String labName;
 
     public Student() {
         this(null);
     }
 
     public Student(List<Lab> labs) {
+
     }
 
     public Lab getLab(String labName) {
+
         return null;
     }
 

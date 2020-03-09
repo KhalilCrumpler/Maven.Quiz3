@@ -28,10 +28,20 @@ public class StringUtils {
     }
 
     public static String[] getAllSubStrings(String string) {
+
         return null;
     }
 
     public static Integer getNumberOfSubStrings(String input){
-        return null;
+        int count = 0;
+        String newString = "";
+        String[] newArray = input.split("");
+        for(int i = 0; i < input.length(); i++){
+            for(int j = 0; j < input.length(); j++){
+                newString += input.substring(i, j+1);
+                count += 1;
+            }
+        }
+        return count;
     }
 }
